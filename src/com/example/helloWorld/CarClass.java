@@ -3,6 +3,7 @@ package com.example.helloWorld;
 public class CarClass {
     public String carName;
     private String carMade;
+    String noPrefix = "No Prefix";
 
     public CarClass(String carName, String carMade) {
         System.out.println("Constructor first");
@@ -42,5 +43,9 @@ public class CarClass {
     public void setCarMade(String carMade) {
         System.out.println("++++++++++++++++++=");
         this.carMade = carMade;
+    }
+
+    public void run () {
+        System.out.println(noPrefix);
     }
 }
